@@ -1,0 +1,64 @@
+.inputRoot {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #535353;
+  .titleHolder {
+    display: flex;
+    align-items: center;
+  }
+  h3 {
+    margin-left: 1em;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .label {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .selectHolder {
+    float: left;
+    min-width: 200px;
+    width: 100%;
+
+    &:after {
+      color: #0ebeff;
+      right: 11px;
+      top: 6px;
+      height: 34px;
+      padding: 15px 0px 0px 8px;
+      border-left: 1px solid #0ebeff;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .select {
+      width: 100%;
+      border-radius: 15px;
+      height: 30px;
+      margin-top: 1em;
+      color: #535353;
+      border: 1px solid #e1e1e1;
+      padding: 0px 1em;
+      appearance: none;
+
+      /* Add some styling */
+
+      display: block;
+      float: right;
+      margin: 5px 0px;
+      line-height: 1.75;
+      color: #333;
+      background-color: #ffffff;
+      background-image: none;
+      word-break: normal;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    margin-top: 1em;
+  }
+}

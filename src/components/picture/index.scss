@@ -1,0 +1,8 @@
+.picture {
+    aspect-ratio: 16/9;
+    max-width: 50%;
+    @media screen and (max-width: 640px) {
+        max-width: 100%;
+        margin-top: 1em;
+    }
+}

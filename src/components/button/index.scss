@@ -1,0 +1,16 @@
+.buttonContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 1em;
+  .button {
+    width: 250px;
+    border-radius: 15px;
+    color: white;
+    background-color: #4b3ac5;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "title" :"Tester votre équipement pour vous assurer de pouvoir réaliser des rendez-vous en téléconsultation dans de bonnes conditions",
+    "subTitle":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iure saepe laudantium necessitatibus expedita libero, similique adipisci tempore quibusdam, fuga harum quas iste debitis consequuntur cum distinctio. Reprehenderit, ex id!",
+    "camera":"Camera",
+    "cameraLabel":"Source de l'image",
+    "micro":"Micro",
+    "microLabel":"Source audio",
+    "niveauSon":"Niveau entrée de son",
+    "volumeSon":"Volume sonore",
+    "volume":"Volume",
+    "volumeLabel":"Source audio",
+    "niveauSortieSon":"Niveau sortie de son",
+    "button":"Démarrer"
+}
