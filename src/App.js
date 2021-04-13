@@ -52,7 +52,7 @@ const App = () => {
               />
               <Slider title="niveauSortieSon" subTitlte="volumeSon" />
             </GridContainer>
-            <Button label="button" />
+            <Button label="labelButton" />
           </Container>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./input.scss";
-const Input = ({ title, icon, data, description,placeholder}) => {
+const Input = ({ title, icon, data, description, placeholder }) => {
   const { t, i18n } = useTranslation();
   return (
     <div className="inputRoot">
@@ -10,15 +10,18 @@ const Input = ({ title, icon, data, description,placeholder}) => {
         <h3>{t(`${title}`)}</h3>
       </div>
       <div className="label">{t(`${description}`)}</div>
-     <div className='selectHolder'>
-     <select defaultValue={placeholder} className="select">
-        {data.map((select, idx) => (
-          <option value={select.title} key={idx}>
-            {select.title}
+      <div className="selectHolder">
+        <select className="select">
+          <option value={placeholder} disabled selected>
+            {placeholder}
           </option>
-        ))}
-      </select>
-     </div>
+          {data.map((select, idx) => (
+            <option value={select.title} key={idx}>
+              {select.title}
+            </option>
+          ))}
+        </select>
+      </div>
     </div>
   );
 };

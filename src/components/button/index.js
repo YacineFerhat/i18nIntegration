@@ -5,10 +5,7 @@ const Button = ({ label }) => {
   const { t, i18n } = useTranslation();
   return (
     <div className="buttonContainer">
-      <div className="button">
-          Démarrer
-        {t.label !== "undefined" ? t.label : "Démarrer"}
-      </div>
+      <div className="button">{t(`${label}`)}</div>
     </div>
   );
 };
