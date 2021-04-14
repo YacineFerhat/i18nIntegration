@@ -6,7 +6,7 @@ const Input = ({ title, icon, data, description, placeholder }) => {
   return (
     <div className="inputRoot">
       <div className="titleHolder">
-        <img src={icon ? icon.icon : null} alt="icon" height="15" />
+        <img className='inputIcon' src={icon ? icon.icon : null} alt="icon" height="15" />
         <h3>{t(`${title}`)}</h3>
       </div>
       <div className="label">{t(`${description}`)}</div>

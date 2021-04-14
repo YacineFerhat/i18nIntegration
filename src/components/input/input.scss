@@ -8,9 +8,11 @@
   .titleHolder {
     display: flex;
     align-items: center;
+    .inputIcon {
+      margin: 0px 1em;
+    }
   }
   h3 {
-    margin-left: 1em;
     font-size: 16px;
     font-weight: 600;
   }
