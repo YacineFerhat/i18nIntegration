@@ -13,7 +13,6 @@ import { Camera, Micro, Audio } from "utils/selectData";
 import Button from "components/button";
 
 const App = () => {
-
   return (
     <Suspense fallback="...loading">
       <div className="App">

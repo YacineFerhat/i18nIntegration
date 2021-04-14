@@ -1,14 +1,24 @@
-import React from 'react'
-import './container.scss'
+import React from "react";
+import "./container.scss";
 import { Icons } from "utils/icons";
-const Header = ({children}) => {
-    return( 
-        <div className='root'>
-            {children}
+import { useTranslation } from "react-i18next";
 
-            <img className="icon" height='30' src={Icons[0].icon} alt='close'/>
-        </div>
-    )
-}
+const Header = ({ children }) => {
+  const { t, i18n } = useTranslation();
+  console.log(i18n.language);
+  return i18n.language === "fr" ? (
+    <div className="root">
+      {children}
 
-export default Header
+      <img className="icon" height="30" src={Icons[0].icon} alt="close" />
+    </div>
+  ) : (
+    <div dir="rtl" className="root">
+      {children}
+
+      <img className="icon" height="30" src={Icons[0].icon} alt="close" />
+    </div>
+  );
+};
+
+export default Header;
